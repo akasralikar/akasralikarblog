@@ -10,6 +10,7 @@ title_separator: "×"
 url: http://akasralikar.github.io
 hostname: akasralikar.github.io
 
+
 # Site owner
 
 owner:
@@ -39,7 +40,7 @@ disqus-shortname: akasralikar
 
 
 # Jekyll configuration
-
+destination: C:\anirudha_workspace\akasralikar.github.io
 permalink: /:categories/:title/
 lsi: true
 markdown: kramdown
