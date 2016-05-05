@@ -1,0 +1,226 @@
+# Site wide configuration
+
+title: "Anirudha Kasralikar"
+description: "Personal website of developer slash illustrator Anirudha Kasralikar."
+logo: site-logo.png
+teaser: default-teaser.png
+locale: en_US
+words_per_minute: 200
+title_separator: "×"
+url: http://akasralikar.github.io
+hostname: akasralikar.github.io
+
+# Site owner
+
+owner:
+  name: "Anirudha Kasralikar"
+  email: akasralikar@outlook.com
+  twitter: akasralikar
+  facebook: anirudha.kasralikar
+  instagram: anirudha.kasralikar
+  tumblr: anirudha-kasralikar
+  github: akasralikar
+  github-repo: https://github.com/akasralikar/akasralikar.github.io/
+  google:
+#    ad-client: ca-pub-7328585512091257
+#    ad-slot: 3049671934
+    analytics: UA-77243794-1
+    plus: https://plus.google.com/111282613185924513271
+#    verify: geapSKtvpBNDSfXVmF09E9CnaHGglbO61r4XgLZtEmo
+#  bing:
+#    verify: D81F4C18A6CB3018F64D7C827D953DFD
+#  alexa:
+#    verify: Y5DYjZ4VWlrQzBP5kcQJeOKLNas
+#  yandex:
+#    verify: 55a5419baf76a498
+  bio: "Just another developer."
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+disqus-shortname: akasralikar
+
+
+# Jekyll configuration
+
+permalink: /:categories/:title/
+lsi: true
+markdown: kramdown
+kramdown:
+  toc_levels: 1..3
+highlighter: rouge
+keep_files: [images]
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - Capfile
+  - config
+  - log
+  - Rakefile
+  - tmp
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - Gemfile
+  - LICENSE
+  - README
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - .jekyll-assets-cache
+  - .asset-cache
+  - .sass-cache
+  - .bundle
+gems:
+  - jekyll-archives
+  - jekyll-assets
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
+
+# Collections
+
+collections:
+  faqs:
+    output: true
+    permalink: /:collection/:path/
+    title: FAQs
+  components:
+    output: false
+  colors:
+    output: false
+
+
+# Defaults
+
+defaults:
+
+  # Blog Articles
+  - scope:
+      path: _posts/articles
+      type: posts
+    values:
+      layout: article
+      category: articles
+
+  # Mastering Paper
+  - scope:
+      path: _posts/mastering-paper
+      type: posts
+    values:
+      layout: article
+      category: mastering-paper
+
+  # PaperFaces
+  - scope:
+      path: _posts/paperfaces
+      type: posts
+    values:
+      layout: article
+      category: paperfaces
+      comments: true
+
+  # Procreate Paintings
+  - scope:
+      path: _posts/procreate
+      type: posts
+    values:
+      layout: article
+      category: procreate-paintings
+      comments: true
+
+  # Tiny Paintings
+  - scope:
+      path: _posts/tiny-paintings
+      type: posts
+    values:
+      layout: article
+      category: tiny-paintings
+      comments: true
+
+  # Work
+  - scope:
+      path: _posts/work
+      type: posts
+    values:
+      layout: article
+      category: work
+
+  # FAQs
+  - scope:
+      path: _faqs
+      type: faqs
+    values:
+      layout: article
+      comments: true
+
+  # Pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: article
+
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Plugin: jekyll-assets
+
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
+
+# Plugin: jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - tags
+  layouts:
+    tag: tag_index
+  permalinks:
+    tag: /tag/:name/
+
+
+# Plugin: jekyll-picture-tag
+
+picture:
+  source: "images/_originals"
+  output: "images"
+  markup: "picture"
+  presets:
+    default:
+      ppi: [1]
+      source_720:
+        media: "(min-width: 1200px)"
+        width: "720"
+      source_670:
+        media: "(min-width: 768px)"
+        width: "670"
+      source_540:
+        media: "(min-width: 600px)"
+        width: "540"
+      source_default:
+        width: "320"
+    hero:
+      attr:
+        class: "page__hero-image"
+        itemprop: "image"
+      ppi: [1]
+      source_1600:
+        media: "(min-width: 1600px)"
+        width: "1600"
+      source_1024:
+        media: "(min-width: 1024px)"
+        width: "1024"
+      source_768:
+        media: "(min-width: 768px)"
+        width: "768"
+      source_600:
+        media: "(min-width: 600px)"
+        width: "600"
+      source_default:
+        width: "320"

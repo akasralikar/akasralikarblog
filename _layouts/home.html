@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% include masthead.html %}
+{% include browser-upgrade.html %}
+<div id="main" role="main">
+  <div class="container post__content">
+    {% unless page.fullwidth == true %}
+    <div class="post__inner-wrapper_home">
+      {% endunless %}
+      <section class="post__body">
+        {{ content }}
+      </section>
+      {% unless page.fullwidth == true %}
+    </div>
+    <aside class="post__sidebar sticky">
+      <div class="toc--sidebar"></div>
+      {% include ad.html %}
+    </aside>
+    {% endunless %}
+  </div>
+</div>
+{% include colophon.html %}

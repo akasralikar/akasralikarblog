@@ -1,0 +1,36 @@
+masthead:
+  - title: "Blog"
+    url: /articles/
+  - title: "Tags"
+    url: /tag/
+  - title: "Sitemap"
+    url: /sitemap/
+  - title: "Support"
+    url: /support/
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+
+colophon-social:
+  - title: "Twitter"
+    url: https://twitter.com/akasralikar
+    icon: icon-twitter
+  - title: "Instagram"
+    url: https://instagram.com/anirudha.kasralikar
+    icon: icon-instagram
+  - title: "Tumblr"
+    url: http://anirudha-kasralikar.tumblr.com/
+    icon: icon-tumblr
+  - title: "Facebook"
+    url: https://facebook.com/anirudha.kasralikar
+    icon: icon-facebook
+  - title: "YouTube"
+    url: https://www.youtube.com/user/anirudhakasralikar
+    icon: icon-youtube
+  - title: "GitHub"
+    url: https://github.com/akasralikar
+    icon: icon-github
+  - title: "Google+"
+    url: https://plus.google.com/111282613185924513271
+    icon: icon-google-plus
