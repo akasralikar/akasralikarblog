@@ -16,15 +16,15 @@ A hierarchical breakdown of all the sections and pages found on the site. For yo
   <ul id="primaryNav" class="col5">
     <li id="home"><a href="{{ site.url }}/">Home</a></li>
     <li><a href="{{ site.url }}/about/">About</a></li>
-    <li><a href="{{ site.url }}/tag/">Archives by Tag</a>
+    <li><a href="{{ site.url }}/topics/">Archives by Tag</a>
       <ul>
         {% assign tags_list = site.tags | sort %}  
         {% for tag in tags_list %} 
-          <li><a href="{{ site.url }}/tag/{{ tag[0] | replace:' ','-' | downcase }}/">{{ tag[0] }}</a></li>
+          <li><a href="{{ site.url }}/topic/{{ tag[0] | replace:' ','-' | downcase }}/">{{ tag[0] }}</a></li>
         {% endfor %}
       </ul>
     </li>
-    <li><a href="{{ site.url }}/articles/">Blog Articles</a>
+    <li><a href="{{ site.url }}/articles/">Articles</a>
       <ul>
         {% for post in site.categories.articles %}
           {% include post-list.html %}

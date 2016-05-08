@@ -6,9 +6,12 @@ image:
   teaser: P1510382_teaser.jpg
   credit: QuotesCover.com
   creditlink: http://www.quotescover.com/those-who-cannot/app/high-resolution-image
-tags: [design, programming, dynamic]
+tags: [dynamic programming]
 comments: true
 featured: true
+author: Anirudha Kasralikar
+date: 2016-05-05 11:27:43
+modified: 2016-05-05 11:27:43
 ---
 
 I will introduce you with basics of dynamic programming.

@@ -1,25 +1,7 @@
 # slugs
 
 articles:
-  name: "Blog Articles"
-
-mastering-paper:
-  name: "Mastering Paper by 53"
-
-paperfaces:
-  name: "PaperFaces Portraits"
-
-procreate-paintings:
-  name: "Procreate Paintings"
-
-tiny-paintings:
-  name: "Tiny Paintings"
-
-work:
-  name: "Work"
-
-faqs:
-  name: "Frequently Asked Questions"
+  name: "Articles"
 
 about:
   name: "About"

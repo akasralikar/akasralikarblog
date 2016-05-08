@@ -990,7 +990,7 @@ redirect 301 /category-sitemap.xml https://akasralikar.github.io/sitemap.xml
 
 RedirectMatch permanent /lifestream https://akasralikar.github.io/articles/
 redirect 301 /about-me/ https://akasralikar.github.io/about/
-redirect 301 /tags https://akasralikar.github.io/tag/
+redirect 301 /tags https://akasralikar.github.io/topics/
 redirect 301 /works https://akasralikar.github.io/work/
 redirect 301 /blog/ https://akasralikar.github.io/articles/
 redirect 301 /blog https://akasralikar.github.io/articles/

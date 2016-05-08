@@ -65,8 +65,12 @@ layout: compress
     <script>
       {% asset_source vendor/loadCSS.js %}
       loadCSS("{% asset_path non-critical.css %}");
+      loadCSS("{% asset_path font-awesome.min.css %}");
     </script>
-    <noscript><link href="{% asset_path non-critical.css %}" rel="stylesheet"></noscript>
+    <noscript>
+      <link href="{% asset_path non-critical.css %}" rel="stylesheet">
+      <link href="{% asset_path font-awesome.min.css %}" rel="stylesheet">
+    </noscript>
 
     <script>
       document.createElement("picture");
@@ -107,6 +111,7 @@ layout: compress
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', '{{ site.owner.google.analytics }}', 'akasralikar.github.io');
+      ga('require', 'linkid');
       ga('send', 'pageview');
     </script>
 

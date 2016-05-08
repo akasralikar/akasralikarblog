@@ -22,29 +22,24 @@ layout: default
     {% if page.feature.visible == true %}
       {% include featured.html %}
     {% endif %}
+    {% if page.path contains '_posts' and page.tags %}
 
+    {% endif %}
     <div class="container post__content">
-
+      <div class="taxonomy">
+        {% include post__taxonomy.html %}
+      </div>
       <div class="post__inner-wrapper">
 
         <section class="post__body" itemprop="text">
           {{ content }}
         </section>
 
-        {% if page.path contains '_posts' and page.tags %}
-        <div class="post__taxonomy">
-          {% include post__taxonomy.html %}
-        </div>
-        {% endif %}
-
         {% if page.author != false %}
-        <footer class="post__footer">
-          {% include post__author.html %}
-        </footer>
+          {% include authored_by.html %}
         {% endif %}
 
         {% include post__social.html %}
-
       </div>
 
       <aside class="post__sidebar sticky">

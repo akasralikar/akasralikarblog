@@ -1,12 +1,10 @@
 masthead:
-  - title: "Blog"
+  - title: "Articles"
     url: /articles/
-  - title: "Tags"
-    url: /tag/
+  - title: "Topics"
+    url: /topics/
   - title: "Sitemap"
     url: /sitemap/
-  - title: "Support"
-    url: /support/
   - title: "About"
     url: /about/
   - title: "Contact"
@@ -34,3 +32,7 @@ colophon-social:
   - title: "Google+"
     url: https://plus.google.com/111282613185924513271
     icon: icon-google-plus
+  - title: "Stack-Overflow"
+    url: http://stackoverflow.com/users/2541859/anirudha-kasralikar
+  - title: "Wufoo"
+    url: https://akasralikar.wufoo.com/admin/

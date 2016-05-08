@@ -9,7 +9,7 @@ words_per_minute: 200
 title_separator: "×"
 url: http://akasralikar.github.io
 hostname: akasralikar.github.io
-
+environment: prod
 
 # Site owner
 
@@ -40,7 +40,6 @@ disqus-shortname: akasralikar
 
 
 # Jekyll configuration
-destination: C:\anirudha_workspace\akasralikar.github.io
 permalink: /:categories/:title/
 lsi: true
 markdown: kramdown
@@ -100,57 +99,6 @@ defaults:
       layout: article
       category: articles
 
-  # Mastering Paper
-  - scope:
-      path: _posts/mastering-paper
-      type: posts
-    values:
-      layout: article
-      category: mastering-paper
-
-  # PaperFaces
-  - scope:
-      path: _posts/paperfaces
-      type: posts
-    values:
-      layout: article
-      category: paperfaces
-      comments: true
-
-  # Procreate Paintings
-  - scope:
-      path: _posts/procreate
-      type: posts
-    values:
-      layout: article
-      category: procreate-paintings
-      comments: true
-
-  # Tiny Paintings
-  - scope:
-      path: _posts/tiny-paintings
-      type: posts
-    values:
-      layout: article
-      category: tiny-paintings
-      comments: true
-
-  # Work
-  - scope:
-      path: _posts/work
-      type: posts
-    values:
-      layout: article
-      category: work
-
-  # FAQs
-  - scope:
-      path: _faqs
-      type: faqs
-    values:
-      layout: article
-      comments: true
-
   # Pages
   - scope:
       path: _pages
@@ -181,9 +129,9 @@ jekyll-archives:
   enabled:
     - tags
   layouts:
-    tag: tag_index
+    tag: topic_index
   permalinks:
-    tag: /tag/:name/
+    tag: /topic/:name/
 
 
 # Plugin: jekyll-picture-tag
