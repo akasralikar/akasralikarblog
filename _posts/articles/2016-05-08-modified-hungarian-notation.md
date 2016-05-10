@@ -75,7 +75,7 @@ $resResourceVariable = fopen( '/home/akasralikar/file.txt', 'r' );
 // $obj for objects
 $objObjectVariable = new CClassName();
 
-// $bool for antonymous / lambda functions
+// $fn for antonymous / lambda functions
 $fnFunctionVariable = function( $name ) {
 	printf( "Hello %s\r\n", $name );
 };
