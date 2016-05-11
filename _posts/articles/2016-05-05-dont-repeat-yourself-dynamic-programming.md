@@ -1,6 +1,6 @@
 ---
 title: Dont Repeat Yourself - Dynamic Programming
-excerpt: "My impressions of the concept dynamic programming using small examples."
+excerpt: "Dynamic programming is a very powerful technique to solve a particular class of problems. This article is an attempt to explain concept dynamic programming using small examples."
 image: 
   feature: Those-who-cannot-remember-the__quotes-by-George-Santayana.png
   teaser: P1510382_teaser.jpg

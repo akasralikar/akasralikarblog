@@ -3,12 +3,24 @@ masthead:
     url: /articles/
   - title: "Topics"
     url: /topics/
-  - title: "Sitemap"
-    url: /sitemap/
+
+mastbottom:
   - title: "About"
     url: /about/
   - title: "Contact"
     url: /contact/
+  - title: "Sitemap"
+    url: /sitemap/
+
+mastbottom-social:
+  - title: "GitHub"
+    url: https://github.com/akasralikar
+  - title: "Twitter"
+    url: https://twitter.com/akasralikar
+  - title: "Facebook"
+    url: https://facebook.com/anirudha.kasralikar
+  - title: "Google+"
+    url: https://plus.google.com/111282613185924513271
 
 colophon-social:
   - title: "Twitter"

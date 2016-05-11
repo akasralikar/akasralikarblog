@@ -1,5 +1,5 @@
 ---
-title: Connect n ropes with minimum cost using PHP
+title: Priority Queue Connect "n" ropes with minimum cost using PHP
 excerpt: "My attempt to explain greedy algorithm using PHP."
 tags: [dynamic programming]
 comments: true

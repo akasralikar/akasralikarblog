@@ -3,7 +3,7 @@ title: Modified Hungarian Notation
 excerpt: "My attempt to explain Hungarian notation with a touch of naming convention standard."
 image: 
   feature: het-belang-van-coding-standards.jpg
-  teaser: wordcloud.jpg
+  teaser: oie_11135753SRKSiEPy.jpg
   credit: wijs.be
   creditlink: https://wijs.be/nl/trends-inzichten/blog/detail/het-belang-van-coding-standards
 tags: [coding standards]
@@ -15,7 +15,6 @@ modified: 2016-05-08 11:27:43
 ---
 
 Coding standards define a programming style. Over the period of time its proven that following a particular standard is useful for code maintainability. In this article I am presenting introduction to modified Hungarian notation.
-
 
 {% include toc.html %}
 
