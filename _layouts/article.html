@@ -26,9 +26,11 @@ layout: default
 
     {% endif %}
     <div class="container post__content">
+      {% if page.taxonomy != false %}
       <div class="taxonomy">
         {% include post__taxonomy.html %}
       </div>
+      {% endif %}
       <div class="post__inner-wrapper">
 
         <section class="post__body" itemprop="text">

@@ -7,6 +7,7 @@ excerpt: "Anirudha Kasralikar is a programmer, an illustrator and a thinker."
 ads: false
 share: false
 author: false
+taxonomy: false
 ---
 
 I'm Anirudha Kasralikar, designer, developer, content writer, product manager, illustrator, depending upon which role I play on given day.
