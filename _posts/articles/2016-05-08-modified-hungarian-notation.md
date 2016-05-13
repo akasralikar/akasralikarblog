@@ -20,7 +20,7 @@ Coding standards define a programming style. Over the period of time its proven 
 
 ## Background  
 I presume that you have basic hands-on with [PHP](http://php.net/ "PHP") programming. Also you understood how community based standard recommendation for any programming language prosper.
-You can go through [PHP Standard Recommendation](http://wwference.w.php-fig.org/psr/ "PHP Standard Recommendation") as reference.
+You can go through [PHP Standard Recommendation](http://php-fig.org/psr/ "PHP Standard Recommendation") as reference.
 
 As per Wikipedia, definition of Hungarian notation is as below.
 

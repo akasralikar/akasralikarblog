@@ -16,8 +16,7 @@ Today I am going to discuss about one of common development design pattern named
 
 {% include toc.html %}
 
-## Introduction: 
- 
+## Introduction
 MVC is a design pattern[^design_pattern]. Although MVC architecture is used by many of the most popular application frameworks like [Symfony](http://symfony.com/ "Symfony"){:target="_blank"}, [CodeIgniter](https://www.codeigniter.com/ "CodeIgniter"){:target="_blank"}, [Laravel ]( https://laravel.com/ "Laravel" ){:target="_blank"}, etc, but it's still a concept which can be confusing sometimes, particularly to new programmers. 
 
 [^design_pattern]: A Design pattern is a code structure that allows for common coding frameworks to be replicated quickly.
@@ -41,8 +40,7 @@ The view should simply render the template and display any data passed to it by 
  
 All of standard frameworks have some kind of routing engine in place which forwards request to controller.   The controller is responsible for processing the incoming requests from the web browser. It receives the input, it validates that input. It communicate with model for data, and then pass that data on to the view for presentation. 
 
-## Features 
-
+## Features
 MVC is not just a firm set of guidelines, but also an overall architecture. You need to get familiar with it and play with different components.
 
 Imagine if everyone in team built applications using their own choices and imaginations, then if new programmer starts working on a project, he would have no idea where to find features, how to extend the code or fix bugs. It would be nightmare for him to adopt to various types implementations. But With MVC design pattern a new programmer can very quickly identify workflow, where data files are resides and where to update the view pages.  
@@ -54,8 +52,7 @@ Imagine if everyone in team built applications using their own choices and imagi
 * Last but not the least the most important benefit of MVC architecture is Isolation of business logic from the UI ( user interface ).  
 </div>
 
-## Analogy 
- 
+## Analogy
 Few days back I came across cool analogy for understanding the Model View Controller design pattern.  
 
 <figure class="third">
@@ -74,18 +71,15 @@ There is another analogy you can refer [here](http://blog.codinghorror.com/under
 
 Making analogies will not guarantee that you get complete understanding of MVC  design pattern, but it helps in correlating real world scenarios with these abstract terms.
 
-## Limitations 
- 
+## Limitations
 MVC is primarily a UI related design pattern, which means it cannot be used for command line tools, utility programs, etc. Also it is complex to implement especially for smaller applications and affect performance in such cases. 
 Because view and controller are closely coupled, modification to one affect the other. Also any changes to model will call for changes to controller and view. 
 
 <!---
-## Example 
- 
+## Example
 I presume you have hands on experience with [PHP]( http://php.net/ "PHP" ){:target="_blank"} programming language and its echo system to understand examples given below.  
 -->
 
-## Conclusion 
+## Conclusion
 I hope that you now have a more clear idea of how the Model View Controller design pattern works and how you can implement it in your applications. 
- 
  

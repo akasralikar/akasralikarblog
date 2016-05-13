@@ -2,15 +2,18 @@
 {% assign slug_first = page_slug[0] %}
 {% assign slug = site.data.slugs[slug_first] %}
 
-<nav class="breadcrumbs">
-  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-    <a href="{{ site.url }}" class="breadcrumb__item" itemprop="url">
-      <span itemprop="title">Home</span>
-    </a> <span class="breadcrumb__sep">×</span>
+<nav class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+  <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="{{ site.url }}" class="breadcrumb__item" itemprop="item">
+      <span itemprop="name">Home</span>
+      <meta itemprop="position" content="1" />
+    </a>
+    <span class="breadcrumb__sep">×</span>
   </span>
-  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-    <a href="{{ site.url }}/{{ slug_first }}/" class="breadcrumb__item" itemprop="url">
-      <span itemprop="title">{{ slug.name }}</span>
+  <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a href="{{ site.url }}/{{ slug_first }}/" class="breadcrumb__item" itemprop="item">
+      <span itemprop="name">{{ slug.name }}</span>
+      <meta itemprop="position" content="1" />
     </a>
   </span>
 </nav><!-- /.breadcrumbs -->

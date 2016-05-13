@@ -6,7 +6,7 @@
        srcset="https://s.gravatar.com/avatar/33966bc09e05f15c1ff7c9457bc25516?s=60&d=monsterid&r=g 2x"
        class="avatar avatar-30 photo" height="30" width="30">
 
-  <span class="entry-author entry-author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person">By: Anirudha Kasralikar</span>
+  By: <span class="entry-author entry-author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Anirudha Kasralikar</span></span>
 
 
   {% capture page_tags %}
@@ -27,7 +27,7 @@
 {% endfor %}
 </span>
   <span class="entry_postdate">Last Updated:
-    <time datetime="{{ page.modified | date: " %Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>
+    <time itemprop="datePublished" content="{{ page.modified | date_to_xmlschema }}" datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>
   </span>
 </p>
 

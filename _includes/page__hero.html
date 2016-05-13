@@ -1,6 +1,9 @@
 <div class="page__hero">
   {% if page.image.feature %}
+  <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
     {% picture hero {{ page.image.feature }} alt="{{ page.title }}" data-downloadable="true" %}
+    <meta itemprop="url" content="{{site.url}}/images/{{ page.image.feature }}">
+  </div>
   {% endif %}
   {% if page.image.credit %}{% include page__hero-credit.html %}{% endif %}
 </div>

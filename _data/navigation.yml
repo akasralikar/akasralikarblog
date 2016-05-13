@@ -3,6 +3,8 @@ masthead:
     url: /articles/
   - title: "Topics"
     url: /topics/
+  - title: "Contact"
+    url: /contact/
 
 mastbottom:
   - title: "About"

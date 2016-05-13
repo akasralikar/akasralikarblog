@@ -42,6 +42,7 @@ layout: compress
 
     {% include sharing-meta.html %}
 
+    <link rel="alternate" href="{{ site.url }}" hreflang="en-in" />
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
 
@@ -110,7 +111,6 @@ layout: compress
   <body id="0">
     {{ content }}
 
-    {% include svg-icons.svg %}
     {% javascript main async %}
 
     {% if page.comments == true %}

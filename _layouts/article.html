@@ -5,16 +5,14 @@ layout: default
 {% include masthead.html %}
 {% include browser-upgrade.html %}
 
-<div id="main" role="main">
+<div id="main" role="main" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <article itemscope itemtype="http://schema.org/CreativeWork">
-
+  <article>
     <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
-
     <header class="container post__header">
-      <h1 class="post__title" itemprop="headline">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-      {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-      {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+      <h1 class="post__title" itemprop="name headline">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+      {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema  }}">{% endif %}
+      {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
       {% include page__hero.html %}
       {% include breadcrumbs.html %}
     </header>
@@ -56,7 +54,7 @@ layout: default
   {% if page.path contains '_posts' and site.related_posts.size >= 3 %}
     {% include related.html %}
   {% endif %}
-
+  <meta itemprop="url" content="{{ site.url }}{{ page.url }}">
 </div>
 
 {% include colophon.html %}
